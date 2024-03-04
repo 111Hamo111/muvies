@@ -1,0 +1,19 @@
+.directors{
+    display: flex;
+    padding-top:  100px;
+    margin: 0 5%;
+    flex-wrap: wrap;
+    .director_a{
+        width: 24.9%;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 19px;
+        text-align: center;
+        img{
+            width: 100%;
+        }
+
+       
+    }
+}

@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Http\Controllers\Admin\Film;
+
+use App\Http\Requests\Film\SelectRequest;
+use App\Models\Film;
+
+class SelectController extends BaseController
+{
+    public function __invoke(SelectRequest $request, Film $film)
+    {
+        $data = $request->validated();  
+        $film->update($data);
+
+        return redirect()->back();
+    }
+
+}
